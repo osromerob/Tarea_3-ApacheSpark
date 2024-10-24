@@ -1,0 +1,82 @@
+Primeras filas del DataFrame:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            6      148             72             35        0  33.6                     0.627   50        1
+1            1       85             66             29        0  26.6                     0.351   31        0
+2            8      183             64              0        0  23.3                     0.672   32        1
+3            1       89             66             23       94  28.1                     0.167   21        0
+4            0      137             40             35      168  43.1                     2.288   33        1
+Registros con Glucose mayor a 150:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            8      183             64            NaN      NaN  23.3                     0.672   32        1
+1            2      197             70           45.0    543.0  30.5                     0.158   53        1
+2           10      168             74            NaN      NaN  38.0                     0.537   34        1
+3            1      189             60           23.0    846.0  30.1                     0.398   59        1
+4            5      166             72           19.0    175.0  25.8                     0.587   51        1
+5            7      196             90            NaN      NaN  39.8                     0.451   41        1
+6            3      158             76           36.0    245.0  31.6                     0.851   28        1
+7            3      180             64           25.0     70.0  34.0                     0.271   26        0
+8            9      171            110           24.0    240.0  45.4                     0.721   54        1
+9            7      159             64            NaN      NaN  27.4                     0.294   40        0
+Registros con Insulina nula:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            6      148           72.0           35.0      NaN  33.6                     0.627   50        1
+1            1       85           66.0           29.0      NaN  26.6                     0.351   31        0
+2            8      183           64.0            NaN      NaN  23.3                     0.672   32        1
+3            5      116           74.0            NaN      NaN  25.6                     0.201   30        0
+4           10      115            NaN            NaN      NaN  35.3                     0.134   29        0
+5            8      125           96.0            NaN      NaN   NaN                     0.232   54        1
+6            4      110           92.0            NaN      NaN  37.6                     0.191   30        0
+7           10      168           74.0            NaN      NaN  38.0                     0.537   34        1
+8           10      139           80.0            NaN      NaN  27.1                     1.441   57        0
+9            7      100            NaN            NaN      NaN  30.0                     0.484   32        1
+Pacientes con BMI menor a 18.5:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            0      104             76            NaN      NaN  18.4                     0.582   27        0
+1            1       83             68            NaN      NaN  18.2                     0.624   27        0
+2            1       97             70           15.0      NaN  18.2                     0.147   21        0
+3            1       97             64           19.0     82.0  18.2                     0.299   21        0
+Pacientes con presión arterial alta, ordenados por Glucosa:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            7      196             90            NaN      NaN  39.8                     0.451   41        1
+1            6      190             92            NaN      NaN  35.5                     0.278   66        1
+2            4      189            110           31.0      NaN  28.5                     0.680   37        0
+3            0      189            104           25.0      NaN  34.3                     0.435   41        1
+4            0      188             82           14.0    185.0  32.0                     0.682   22        1
+5            8      186             90           35.0    225.0  34.5                     0.423   37        1
+6            9      184             85           15.0      NaN  30.0                     1.213   49        1
+7            7      184             84           33.0      NaN  35.5                     0.355   41        1
+8            6      183             94            NaN      NaN  40.8                     1.461   45        0
+9            7      181             84           21.0    192.0  35.9                     0.586   51        1
+Pacientes con resultado positivo de diabetes, ordenados por BMI:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome
+0            8      125           96.0            NaN      NaN   NaN                     0.232   54        1
+1           10      115            NaN            NaN      NaN   NaN                     0.261   30        1
+2            3      107           62.0           13.0     48.0  22.9                     0.678   23        1
+3            8      183           64.0            NaN      NaN  23.3                     0.672   32        1
+4            1      167           74.0           17.0    144.0  23.4                     0.447   33        1
+5            6      194           78.0            NaN      NaN  23.5                     0.129   59        1
+6            4      134           72.0            NaN      NaN  23.8                     0.277   60        1
+7            6      162           62.0            NaN      NaN  24.3                     0.178   50        1
+8            9      156           86.0            NaN      NaN  24.8                     0.230   53        1
+9            7      195           70.0           33.0    145.0  25.1                     0.163   55        1
+Pacientes de alto riesgo (Glucosa > 200 y BMI > 30), ordenados por Insulina:
+Empty DataFrame
+Columns: [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age, Outcome]
+Index: []
+Resumen estadístico del DataFrame:
+  summary         Pregnancies            Glucose       BloodPressure       SkinThickness             Insulin                BMI DiabetesPedigreeFunction                 Age             Outcome
+0   count                 768                763                 733                 541                 394                757                      768                 768                 768
+1    mean  3.8450520833333335  121.6867627785059   72.40518417462484  29.153419593345657   155.5482233502538  32.45746367239099       0.4718763020833327  33.240885416666664  0.3489583333333333
+2  stddev    3.36957806269887  30.53564107280403  12.382158210105265  10.476982369987208  118.77585518724517  6.924988332105911        0.331328595012775  11.760231540678689   0.476951377242799
+3     min                   0                 44                  24                   7                  14               18.2                    0.078                  21                   0
+4     max                  17                199                 122                  99                 846               67.1                     2.42                  81                   1
+Conteo de valores nulos por columna:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin  BMI  DiabetesPedigreeFunction  Age  Outcome
+0            0        5             35            227      374   11                         0    0        0
+Primeras filas después de la imputación:
+   Pregnancies  Glucose  BloodPressure  SkinThickness  Insulin   BMI  DiabetesPedigreeFunction  Age  Outcome  Glucose_imputed  BloodPressure_imputed  SkinThickness_imputed  Insulin_imputed  BMI_imputed
+0            6      148             72           35.0      NaN  33.6                     0.627   50        1              148                     72                     35              155         33.6
+1            1       85             66           29.0      NaN  26.6                     0.351   31        0               85                     66                     29              155         26.6
+2            8      183             64            NaN      NaN  23.3                     0.672   32        1              183                     64                     29              155         23.3
+3            1       89             66           23.0     94.0  28.1                     0.167   21        0               89                     66                     23               94         28.1
+4            0      137             40           35.0    168.0  43.1                     2.288   33        1              137                     40                     35              168         43.1
